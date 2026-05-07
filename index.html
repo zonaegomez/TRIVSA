@@ -1128,64 +1128,67 @@
 </nav>
 
 <!-- HERO -->
-<section id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-grid-lines"></div>
+<section id="hero" style="min-height:100vh;display:grid;grid-template-columns:1fr;align-items:flex-end;padding:0;position:relative;overflow:hidden;">
 
-  <div class="hero-content">
-    <div class="hero-tag">Altamira, Tam. · Fundada 1998</div>
+  <!-- FOTO FULL SCREEN -->
+  <div style="position:absolute;inset:0;z-index:0;">
+    <img src="PORTADA.png" alt="TRIVSA — Puerto de Altamira" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;">
+    <!-- Gradiente oscuro para legibilidad -->
+    <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.5) 55%, rgba(0,0,0,0.15) 100%);"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);"></div>
+  </div>
 
-    <h1 class="hero-title">
-      <span class="line-yellow">Conectamos</span><br>
+  <!-- CONTENIDO SOBRE LA FOTO -->
+  <div style="position:relative;z-index:2;padding:120px 5vw 80px;max-width:720px;">
+
+    <div class="hero-tag" style="background:rgba(212,160,23,0.15);border:1px solid rgba(212,160,23,0.5);color:#F5C518;">
+      Altamira, Tam. · Fundada 1998
+    </div>
+
+    <h1 style="font-family:var(--font-display);font-weight:900;font-size:clamp(56px,7vw,96px);line-height:0.88;letter-spacing:-1px;text-transform:uppercase;margin-bottom:28px;color:#fff;">
+      <span style="color:#F5C518;">Conectamos</span><br>
       destinos,<br>
-      <span class="line-red">entregamos</span><br>
+      <span style="color:#E8453C;">entregamos</span><br>
       confianza.
     </h1>
 
-    <div class="hero-slash"></div>
+    <div style="width:60px;height:4px;background:linear-gradient(90deg,#F5C518,#C0392B);margin-bottom:28px;"></div>
 
-    <p class="hero-sub">
-      Línea transportista federal especializada en <strong>carga general y especializada</strong>. Plataformas de 40ft, carga pesada, contenedores y proyectos industriales en toda la república.
+    <p style="font-size:18px;font-weight:300;color:rgba(255,255,255,0.85);line-height:1.75;margin-bottom:44px;max-width:480px;">
+      Línea transportista federal especializada en <strong style="color:#fff;font-weight:500;">carga general y especializada</strong>. Plataformas de 40ft, carga pesada, contenedores y proyectos industriales en toda la república.
     </p>
 
-    <div class="hero-actions">
+    <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:64px;">
       <a href="#contacto" class="btn-primary">Solicitar cotización</a>
-      <a href="#servicios" class="btn-secondary">Ver servicios</a>
+      <a href="#servicios" style="font-family:var(--font-display);font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.8);text-decoration:none;border:1px solid rgba(255,255,255,0.3);padding:13px 28px;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='#F5C518';this.style.color='#F5C518'" onmouseout="this.style.borderColor='rgba(255,255,255,0.3)';this.style.color='rgba(255,255,255,0.8)'">Ver servicios</a>
     </div>
 
-    <div class="hero-stats">
-      <div class="stat-item">
-        <div class="stat-num">+25</div>
-        <div class="stat-label">Años de experiencia</div>
+    <!-- STATS -->
+    <div style="display:flex;gap:48px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.12);flex-wrap:wrap;">
+      <div>
+        <div style="font-family:var(--font-display);font-size:40px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-1px;">+25</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.5);letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;">Años de experiencia</div>
       </div>
-      <div class="stat-item">
-        <div class="stat-num">0</div>
-        <div class="stat-label">Accidentes carreteros</div>
+      <div>
+        <div style="font-family:var(--font-display);font-size:40px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-1px;">0</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.5);letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;">Accidentes carreteros</div>
       </div>
-      <div class="stat-item">
-        <div class="stat-num">3</div>
-        <div class="stat-label">Puertos habilitados</div>
+      <div>
+        <div style="font-family:var(--font-display);font-size:40px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-1px;">3</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.5);letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;">Puertos habilitados</div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-display);font-size:40px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-1px;">15+</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.5);letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;">Clientes activos</div>
       </div>
     </div>
   </div>
 
-  <div class="hero-visual">
-    <div class="hero-truck-card">
-      <!-- Tiger logo decorative overlay -->
-      <div style="position:absolute;top:-40px;right:-40px;width:200px;height:200px;z-index:3;pointer-events:none;">
-        <img src="ISOLOGOTR.png" alt="" style="width:100%;height:100%;object-fit:contain;opacity:0.12;filter:grayscale(20%);">
-      </div>
-      <div class="hero-accent-line"></div>
-      <div class="hero-truck-img">
-        <!-- Imagen placeholder - reemplazar con foto real de la flota -->
-        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" alt="Flota TRIVSA - Tractocamiones Kenworth" loading="lazy">
-      </div>
-      <div class="hero-badge">
-        <div class="hero-badge-num">40ft</div>
-        <div class="hero-badge-text">Plataformas</div>
-      </div>
-    </div>
+  <!-- Logo tigre decorativo esquina derecha -->
+  <div style="position:absolute;right:5vw;bottom:60px;z-index:2;opacity:0.12;pointer-events:none;">
+    <img src="ISOLOGOTR.png" alt="" style="width:260px;height:260px;object-fit:contain;">
   </div>
+
 </section>
 
 <!-- TICKER -->
@@ -1223,58 +1226,76 @@
   </div>
 
   <div class="servicios-grid">
-    <div class="servicio-card fade-in">
-      <div class="servicio-num">01</div>
-      <div class="servicio-icon">
-        <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+    <div class="servicio-card fade-in" style="padding:0;overflow:hidden;">
+      <div style="height:180px;overflow:hidden;position:relative;">
+        <img src="PAGINA_7.png" alt="Plataformas 40ft TRIVSA" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 30%,rgba(10,10,10,0.7) 100%);"></div>
+        <div style="position:absolute;top:12px;right:12px;font-family:var(--font-display);font-size:36px;font-weight:900;color:rgba(255,255,255,0.15);">01</div>
       </div>
-      <div class="servicio-title">Plataformas 40ft</div>
-      <p class="servicio-desc">Transporte de carga general y especializada en plataformas de 40 pies para carga suelta. Equipo tipo full en configuración doblemente articulada.</p>
+      <div style="padding:28px 28px 32px;">
+        <div class="servicio-title">Plataformas 40ft</div>
+        <p class="servicio-desc">Transporte de carga general y especializada en plataformas de 40 pies para carga suelta. Equipo tipo full en configuración doblemente articulada.</p>
+      </div>
     </div>
 
-    <div class="servicio-card fade-in fade-in-delay-1">
-      <div class="servicio-num">02</div>
-      <div class="servicio-icon">
-        <svg viewBox="0 0 24 24"><path d="M2 20h20"/><path d="M5 20V8l7-5 7 5v12"/><path d="M9 20v-5h6v5"/></svg>
+    <div class="servicio-card fade-in fade-in-delay-1" style="padding:0;overflow:hidden;">
+      <div style="height:180px;overflow:hidden;position:relative;">
+        <img src="PAGINA_3.png" alt="Chasis portacontenedores TRIVSA" style="width:100%;height:100%;object-fit:cover;object-position:center 50%;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 30%,rgba(10,10,10,0.7) 100%);"></div>
+        <div style="position:absolute;top:12px;right:12px;font-family:var(--font-display);font-size:36px;font-weight:900;color:rgba(255,255,255,0.15);">02</div>
       </div>
-      <div class="servicio-title">Chasis Portacontenedores</div>
-      <p class="servicio-desc">Transporte especializado en chasis portacontenedores de 40 pies. Retiro directo desde puertos Altamira, Tampico y Veracruz.</p>
+      <div style="padding:28px 28px 32px;">
+        <div class="servicio-title">Chasis Portacontenedores</div>
+        <p class="servicio-desc">Transporte especializado en chasis portacontenedores de 40 pies. Retiro directo desde puertos Altamira, Tampico y Veracruz.</p>
+      </div>
     </div>
 
-    <div class="servicio-card fade-in fade-in-delay-2">
-      <div class="servicio-num">03</div>
-      <div class="servicio-icon">
-        <svg viewBox="0 0 24 24"><path d="M22 8.5A2.5 2.5 0 0 0 19.5 6h-15A2.5 2.5 0 0 0 2 8.5v7A2.5 2.5 0 0 0 4.5 18h15a2.5 2.5 0 0 0 2.5-2.5z"/><path d="M6 12h12"/><path d="M6 15h6"/></svg>
+    <div class="servicio-card fade-in fade-in-delay-2" style="padding:0;overflow:hidden;">
+      <div style="height:180px;overflow:hidden;position:relative;">
+        <img src="PAGINA_4_3.png" alt="Carga pesada rollos acero TRIVSA" style="width:100%;height:100%;object-fit:cover;object-position:center 60%;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 30%,rgba(10,10,10,0.7) 100%);"></div>
+        <div style="position:absolute;top:12px;right:12px;font-family:var(--font-display);font-size:36px;font-weight:900;color:rgba(255,255,255,0.15);">03</div>
       </div>
-      <div class="servicio-title">Carga Pesada</div>
-      <p class="servicio-desc">Rollos de acero de 9 a 25 toneladas, vigas y planchones. Infraestructura completa para maniobra, carga y descarga con montacargas de alta capacidad.</p>
+      <div style="padding:28px 28px 32px;">
+        <div class="servicio-title">Carga Pesada</div>
+        <p class="servicio-desc">Rollos de acero de 9 a 25 toneladas, vigas y planchones. Infraestructura completa para maniobra, carga y descarga con montacargas de alta capacidad.</p>
+      </div>
     </div>
 
-    <div class="servicio-card fade-in">
-      <div class="servicio-num">04</div>
-      <div class="servicio-icon">
-        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    <div class="servicio-card fade-in" style="padding:0;overflow:hidden;">
+      <div style="height:180px;overflow:hidden;position:relative;">
+        <img src="PAGINA_5_1.png" alt="Almacén TRIVSA" style="width:100%;height:100%;object-fit:cover;object-position:center 50%;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 30%,rgba(10,10,10,0.7) 100%);"></div>
+        <div style="position:absolute;top:12px;right:12px;font-family:var(--font-display);font-size:36px;font-weight:900;color:rgba(255,255,255,0.15);">04</div>
       </div>
-      <div class="servicio-title">Almacén y Maniobra</div>
-      <p class="servicio-desc">Almacenamiento en bodegas techadas. Desconsolidación de cajas secas, planes de estiba, recepción, registro y despacho de materiales.</p>
+      <div style="padding:28px 28px 32px;">
+        <div class="servicio-title">Almacén y Maniobra</div>
+        <p class="servicio-desc">Almacenamiento en bodegas techadas. Desconsolidación de cajas secas, planes de estiba, recepción, registro y despacho de materiales.</p>
+      </div>
     </div>
 
-    <div class="servicio-card fade-in fade-in-delay-1">
-      <div class="servicio-num">05</div>
-      <div class="servicio-icon">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+    <div class="servicio-card fade-in fade-in-delay-1" style="padding:0;overflow:hidden;">
+      <div style="height:180px;overflow:hidden;position:relative;">
+        <img src="PAGINA_8_2.png" alt="Rastreo satelital Motum TRIVSA" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 30%,rgba(10,10,10,0.7) 100%);"></div>
+        <div style="position:absolute;top:12px;right:12px;font-family:var(--font-display);font-size:36px;font-weight:900;color:rgba(255,255,255,0.15);">05</div>
       </div>
-      <div class="servicio-title">Trazabilidad en Tiempo Real</div>
-      <p class="servicio-desc">Sistema GPS satelital TECNOMOTUM con rastreo en vivo, historial de posición y alertas de emergencia. Dashboard disponible para el cliente.</p>
+      <div style="padding:28px 28px 32px;">
+        <div class="servicio-title">Trazabilidad en Tiempo Real</div>
+        <p class="servicio-desc">Sistema GPS satelital MOTUM con rastreo en vivo, historial de posición y alertas de emergencia. Dashboard disponible para el cliente.</p>
+      </div>
     </div>
 
-    <div class="servicio-card fade-in fade-in-delay-2">
-      <div class="servicio-num">06</div>
-      <div class="servicio-icon">
-        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+    <div class="servicio-card fade-in fade-in-delay-2" style="padding:0;overflow:hidden;">
+      <div style="height:180px;overflow:hidden;position:relative;">
+        <img src="PAGINA_5_2.png" alt="Montacargas maniobra TRIVSA" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 30%,rgba(10,10,10,0.7) 100%);"></div>
+        <div style="position:absolute;top:12px;right:12px;font-family:var(--font-display);font-size:36px;font-weight:900;color:rgba(255,255,255,0.15);">06</div>
       </div>
-      <div class="servicio-title">Manejo de Inventarios</div>
-      <p class="servicio-desc">Control de entradas y salidas, despacho de materiales y reportes en tiempo real. Personal disponible en campo y oficinas.</p>
+      <div style="padding:28px 28px 32px;">
+        <div class="servicio-title">Manejo de Inventarios</div>
+        <p class="servicio-desc">Control de entradas y salidas, despacho de materiales y reportes en tiempo real. Personal disponible en campo y oficinas.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -1330,8 +1351,13 @@
     </div>
 
     <div class="seguridad-visual fade-in">
+      <!-- Main: GPS dashboard -->
       <div class="seg-main-img">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Seguridad operativa TRIVSA" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+        <img src="PAGINA_8_1.png" alt="Sistema GPS Motum TRIVSA" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;">
+      </div>
+      <!-- Secondary photo: dashcam -->
+      <div style="position:absolute;bottom:-24px;left:-24px;width:200px;height:140px;overflow:hidden;clip-path:polygon(0 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%);border:3px solid var(--bg);">
+        <img src="PAGINA_8_3.png" alt="Dashcam TRIVSA" style="width:100%;height:100%;object-fit:cover;">
       </div>
       <div class="seg-stat-box">
         <div class="seg-stat-num">100%</div>
@@ -1343,10 +1369,18 @@
 
 <!-- PARQUE VEHICULAR -->
 <section id="parque">
-  <div class="fade-in">
-    <div class="section-tag">Flota</div>
-    <h2 class="section-title">Parque<br><span style="color:var(--yellow)">vehicular</span></h2>
+  <!-- Full-width fleet photo -->
+  <div style="margin:-100px -5vw 0;height:480px;overflow:hidden;position:relative;">
+    <img src="PAGINA_11.png" alt="Flota TRIVSA — Kenworth alineados" style="width:100%;height:100%;object-fit:cover;object-position:center 35%;">
+    <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,var(--bg-2) 100%);"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0.5) 0%,transparent 50%);"></div>
+    <div style="position:absolute;bottom:40px;left:5vw;">
+      <div style="font-family:var(--font-display);font-weight:900;font-size:clamp(40px,5vw,72px);line-height:0.9;text-transform:uppercase;color:#fff;text-shadow:0 2px 20px rgba(0,0,0,0.5);">Parque<br><span style="color:#F5C518;">vehicular</span></div>
+      <div style="font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:2px;color:rgba(255,255,255,0.6);text-transform:uppercase;margin-top:8px;">Kenworth · Modelos 2018–2025</div>
+    </div>
   </div>
+
+  <div style="height:60px;"></div>
 
   <div class="parque-grid">
     <div class="parque-card fade-in">
@@ -1406,26 +1440,46 @@
     </div>
   </div>
 
-  <div class="clientes-list fade-in">
-    <div class="cliente-item"><div class="cliente-dot"></div><span class="cliente-name">Holcim Cementos Apasco</span></div>
-    <div class="cliente-item"><div class="cliente-dot"></div><span class="cliente-name">Ternium México</span></div>
-    <div class="cliente-item"><div class="cliente-dot"></div><span class="cliente-name">ArcelorMittal México</span></div>
-    <div class="cliente-item"><div class="cliente-dot"></div><span class="cliente-name">ThyssenKrupp</span></div>
-    <div class="cliente-item"><div class="cliente-dot"></div><span class="cliente-name">Metalsa Apodaca</span></div>
-    <div class="cliente-item"><div class="cliente-dot"></div><span class="cliente-name">POSCO MPPC</span></div>
-    <div class="cliente-item"><div class="cliente-dot"></div><span class="cliente-name">Serviaceros Especiales</span></div>
-    <div class="cliente-item"><div class="cliente-dot"></div><span class="cliente-name">Serviaceros Planos</span></div>
-    <div class="cliente-item"><div class="cliente-dot"></div><span class="cliente-name">Serviaceros Comercial</span></div>
-    <div class="cliente-item"><div class="cliente-dot"></div><span class="cliente-name">Acero Prime</span></div>
-    <div class="cliente-item"><div class="cliente-dot"></div><span class="cliente-name">Aceromex</span></div>
-    <div class="cliente-item"><div class="cliente-dot"></div><span class="cliente-name">Aceros Galácticos</span></div>
-    <div class="cliente-item"><div class="cliente-dot"></div><span class="cliente-name">Shin Steel Mexico</span></div>
-    <div class="cliente-item"><div class="cliente-dot"></div><span class="cliente-name">Ranchoacero</span></div>
-    <div class="cliente-item"><div class="cliente-dot"></div><span class="cliente-name">Papalotes Steel</span></div>
-    <div class="cliente-item"><div class="cliente-dot"></div><span class="cliente-name">Tsim Internacional</span></div>
-    <div class="cliente-item"><div class="cliente-dot"></div><span class="cliente-name">Corte Acero</span></div>
+  <!-- Clientes con foto de fondo -->
+  <div style="position:relative;overflow:hidden;margin:0 -5vw;">
+    <div style="position:absolute;inset:0;">
+      <img src="PAGINA_16.png" alt="TRIVSA en planta industrial" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:brightness(0.15) saturate(0.3);">
+    </div>
+    <div style="position:relative;z-index:2;padding:60px 5vw;">
+      <p style="font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--yellow);margin-bottom:48px;text-align:center;">Empresas que confían en TRIVSA</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1px;background:rgba(255,255,255,0.06);">
+        <div class="cliente-item" style="background:rgba(255,255,255,0.04);"><div class="cliente-dot"></div><span class="cliente-name" style="color:rgba(255,255,255,0.75);">Holcim Cementos Apasco</span></div>
+        <div class="cliente-item" style="background:rgba(255,255,255,0.04);"><div class="cliente-dot"></div><span class="cliente-name" style="color:rgba(255,255,255,0.75);">Ternium México</span></div>
+        <div class="cliente-item" style="background:rgba(255,255,255,0.04);"><div class="cliente-dot"></div><span class="cliente-name" style="color:rgba(255,255,255,0.75);">ArcelorMittal México</span></div>
+        <div class="cliente-item" style="background:rgba(255,255,255,0.04);"><div class="cliente-dot"></div><span class="cliente-name" style="color:rgba(255,255,255,0.75);">ThyssenKrupp</span></div>
+        <div class="cliente-item" style="background:rgba(255,255,255,0.04);"><div class="cliente-dot"></div><span class="cliente-name" style="color:rgba(255,255,255,0.75);">Metalsa Apodaca</span></div>
+        <div class="cliente-item" style="background:rgba(255,255,255,0.04);"><div class="cliente-dot"></div><span class="cliente-name" style="color:rgba(255,255,255,0.75);">POSCO MPPC</span></div>
+        <div class="cliente-item" style="background:rgba(255,255,255,0.04);"><div class="cliente-dot"></div><span class="cliente-name" style="color:rgba(255,255,255,0.75);">Serviaceros Especiales</span></div>
+        <div class="cliente-item" style="background:rgba(255,255,255,0.04);"><div class="cliente-dot"></div><span class="cliente-name" style="color:rgba(255,255,255,0.75);">Serviaceros Planos</span></div>
+        <div class="cliente-item" style="background:rgba(255,255,255,0.04);"><div class="cliente-dot"></div><span class="cliente-name" style="color:rgba(255,255,255,0.75);">Serviaceros Comercial</span></div>
+        <div class="cliente-item" style="background:rgba(255,255,255,0.04);"><div class="cliente-dot"></div><span class="cliente-name" style="color:rgba(255,255,255,0.75);">Acero Prime</span></div>
+        <div class="cliente-item" style="background:rgba(255,255,255,0.04);"><div class="cliente-dot"></div><span class="cliente-name" style="color:rgba(255,255,255,0.75);">Aceromex</span></div>
+        <div class="cliente-item" style="background:rgba(255,255,255,0.04);"><div class="cliente-dot"></div><span class="cliente-name" style="color:rgba(255,255,255,0.75);">Aceros Galácticos</span></div>
+        <div class="cliente-item" style="background:rgba(255,255,255,0.04);"><div class="cliente-dot"></div><span class="cliente-name" style="color:rgba(255,255,255,0.75);">Shin Steel Mexico</span></div>
+        <div class="cliente-item" style="background:rgba(255,255,255,0.04);"><div class="cliente-dot"></div><span class="cliente-name" style="color:rgba(255,255,255,0.75);">Ranchoacero</span></div>
+        <div class="cliente-item" style="background:rgba(255,255,255,0.04);"><div class="cliente-dot"></div><span class="cliente-name" style="color:rgba(255,255,255,0.75);">Papalotes Steel</span></div>
+        <div class="cliente-item" style="background:rgba(255,255,255,0.04);"><div class="cliente-dot"></div><span class="cliente-name" style="color:rgba(255,255,255,0.75);">Tsim Internacional</span></div>
+        <div class="cliente-item" style="background:rgba(255,255,255,0.04);"><div class="cliente-dot"></div><span class="cliente-name" style="color:rgba(255,255,255,0.75);">Corte Acero</span></div>
+      </div>
+    </div>
   </div>
 </section>
+
+
+<!-- BANNER ATARDECER -->
+<div style="height:400px;position:relative;overflow:hidden;">
+  <img src="PAGINA_21.png" alt="TRIVSA en ruta" style="width:100%;height:100%;object-fit:cover;object-position:center 50%;">
+  <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.2) 60%,transparent 100%);"></div>
+  <div style="position:absolute;top:50%;left:5vw;transform:translateY(-50%);">
+    <div style="font-family:var(--font-display);font-size:clamp(28px,3.5vw,48px);font-weight:900;text-transform:uppercase;color:#fff;line-height:1;margin-bottom:12px;">Tu carga,<br><span style="color:#F5C518;">nuestro compromiso.</span></div>
+    <div style="font-size:15px;color:rgba(255,255,255,0.65);font-weight:300;max-width:360px;line-height:1.6;">Más de 25 años conectando orígenes y destinos a lo largo de toda la república mexicana.</div>
+  </div>
+</div>
 
 <!-- RUTAS -->
 <section id="rutas">
