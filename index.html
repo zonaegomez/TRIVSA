@@ -1128,65 +1128,65 @@
 </nav>
 
 <!-- HERO -->
-<section id="hero" style="min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0;position:relative;overflow:hidden;">
+<section id="hero" style="min-height:100vh;display:flex;flex-direction:column;padding:0;position:relative;overflow:hidden;">
 
-  <!-- FOTO FULL SCREEN — posicionada para mostrar el camión -->
+  <!-- FOTO FULL SCREEN — camión visible a la izquierda -->
   <div style="position:absolute;inset:0;z-index:0;">
     <img src="PORTADA.png" alt="TRIVSA — Puerto de Altamira"
-      style="width:100%;height:100%;object-fit:cover;object-position:20% center;">
-    <!-- Capa oscura más pareja, no solo a la izquierda -->
-    <div style="position:absolute;inset:0;background:rgba(0,0,0,0.52);"></div>
-    <!-- Gradiente bottom para que los stats emerjan -->
-    <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 55%);"></div>
-    <!-- Franja izquierda solo donde va el texto -->
-    <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(0,0,0,0.35) 0%, transparent 55%);"></div>
+      style="width:100%;height:100%;object-fit:cover;object-position:25% center;">
+    <!-- Gradiente fuerte desde la derecha donde va el texto -->
+    <div style="position:absolute;inset:0;background:linear-gradient(to left, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.75) 40%, rgba(0,0,0,0.3) 65%, transparent 100%);"></div>
+    <!-- Gradiente bottom para stats -->
+    <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 40%);"></div>
   </div>
 
-  <!-- CONTENIDO — centrado verticalmente, con breathing room -->
-  <div style="position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;min-height:100vh;padding:0 5vw 72px;">
+  <!-- LAYOUT: foto izq, contenido der -->
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;min-height:100vh;">
 
-    <!-- Tag arriba pegado como breadcrumb -->
-    <div style="position:absolute;top:88px;left:5vw;">
+    <!-- Tag top-right -->
+    <div style="display:flex;justify-content:flex-end;padding:88px 5vw 0;">
       <div class="hero-tag" style="background:rgba(212,160,23,0.15);border:1px solid rgba(212,160,23,0.45);color:#F5C518;">
         Altamira, Tam. · Fundada 1998
       </div>
     </div>
 
-    <!-- Título grande centrado verticalmente -->
-    <div style="position:absolute;top:50%;left:5vw;transform:translateY(-50%);max-width:600px;">
-      <h1 style="font-family:var(--font-display);font-weight:900;font-size:clamp(52px,6.5vw,92px);line-height:0.9;letter-spacing:-1px;text-transform:uppercase;margin-bottom:24px;color:#fff;text-shadow:0 2px 32px rgba(0,0,0,0.4);">
-        <span style="color:#F5C518;">Conectamos</span><br>
-        destinos,<br>
-        <span style="color:#E8453C;">entregamos</span><br>
-        confianza.
-      </h1>
-      <div style="width:56px;height:4px;background:linear-gradient(90deg,#F5C518,#C0392B);margin-bottom:24px;"></div>
-      <p style="font-size:17px;font-weight:300;color:rgba(255,255,255,0.8);line-height:1.7;margin-bottom:36px;max-width:440px;">
-        Línea transportista federal especializada en <strong style="color:#fff;font-weight:500;">carga general y especializada</strong>. Plataformas de 40ft, carga pesada y proyectos industriales en toda la república.
-      </p>
-      <div style="display:flex;gap:14px;flex-wrap:wrap;">
-        <a href="#contacto" class="btn-primary">Solicitar cotización</a>
-        <a href="#servicios" style="font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.85);text-decoration:none;border:1px solid rgba(255,255,255,0.35);padding:13px 26px;display:inline-block;transition:all 0.2s;" onmouseover="this.style.borderColor='#F5C518';this.style.color='#F5C518'" onmouseout="this.style.borderColor='rgba(255,255,255,0.35)';this.style.color='rgba(255,255,255,0.85)'">Ver servicios</a>
+    <!-- Contenido centrado verticalmente a la DERECHA -->
+    <div style="flex:1;display:flex;align-items:center;justify-content:flex-end;padding:40px 5vw;">
+      <div style="max-width:520px;text-align:left;">
+        <h1 style="font-family:var(--font-display);font-weight:900;font-size:clamp(48px,5.5vw,84px);line-height:0.9;letter-spacing:-1px;text-transform:uppercase;margin-bottom:24px;color:#fff;text-shadow:0 2px 32px rgba(0,0,0,0.5);">
+          <span style="color:#F5C518;">Conectamos</span><br>
+          destinos,<br>
+          <span style="color:#E8453C;">entregamos</span><br>
+          confianza.
+        </h1>
+        <div style="width:56px;height:4px;background:linear-gradient(90deg,#F5C518,#C0392B);margin-bottom:20px;"></div>
+        <p style="font-size:16px;font-weight:300;color:rgba(255,255,255,0.78);line-height:1.7;margin-bottom:32px;">
+          Línea transportista federal especializada en <strong style="color:#fff;font-weight:500;">carga general y especializada</strong>. Plataformas de 40ft, carga pesada y proyectos industriales en toda la república.
+        </p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;">
+          <a href="#contacto" class="btn-primary">Solicitar cotización</a>
+          <a href="#servicios" style="font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.85);text-decoration:none;border:1px solid rgba(255,255,255,0.35);padding:13px 26px;display:inline-block;" onmouseover="this.style.borderColor='#F5C518';this.style.color='#F5C518'" onmouseout="this.style.borderColor='rgba(255,255,255,0.35)';this.style.color='rgba(255,255,255,0.85)'">Ver servicios</a>
+        </div>
       </div>
     </div>
 
-    <!-- STATS en la parte baja, full width -->
-    <div style="display:flex;gap:0;border-top:1px solid rgba(255,255,255,0.12);padding-top:0;width:100%;flex-wrap:wrap;">
-      <div style="flex:1;min-width:120px;padding:24px 0;border-right:1px solid rgba(255,255,255,0.1);">
-        <div style="font-family:var(--font-display);font-size:42px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-1px;">+25</div>
-        <div style="font-size:11px;color:rgba(255,255,255,0.45);letter-spacing:1.5px;text-transform:uppercase;margin-top:6px;">Años de experiencia</div>
+    <!-- STATS barra inferior full width -->
+    <div style="display:flex;border-top:1px solid rgba(255,255,255,0.1);">
+      <div style="flex:1;padding:20px 5vw;border-right:1px solid rgba(255,255,255,0.08);">
+        <div style="font-family:var(--font-display);font-size:38px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-1px;">+25</div>
+        <div style="font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;">Años de experiencia</div>
       </div>
-      <div style="flex:1;min-width:120px;padding:24px 32px;border-right:1px solid rgba(255,255,255,0.1);">
-        <div style="font-family:var(--font-display);font-size:42px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-1px;">0</div>
-        <div style="font-size:11px;color:rgba(255,255,255,0.45);letter-spacing:1.5px;text-transform:uppercase;margin-top:6px;">Accidentes carreteros</div>
+      <div style="flex:1;padding:20px 24px;border-right:1px solid rgba(255,255,255,0.08);">
+        <div style="font-family:var(--font-display);font-size:38px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-1px;">0</div>
+        <div style="font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;">Accidentes carreteros</div>
       </div>
-      <div style="flex:1;min-width:120px;padding:24px 32px;border-right:1px solid rgba(255,255,255,0.1);">
-        <div style="font-family:var(--font-display);font-size:42px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-1px;">3</div>
-        <div style="font-size:11px;color:rgba(255,255,255,0.45);letter-spacing:1.5px;text-transform:uppercase;margin-top:6px;">Puertos habilitados</div>
+      <div style="flex:1;padding:20px 24px;border-right:1px solid rgba(255,255,255,0.08);">
+        <div style="font-family:var(--font-display);font-size:38px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-1px;">3</div>
+        <div style="font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;">Puertos habilitados</div>
       </div>
-      <div style="flex:1;min-width:120px;padding:24px 32px;">
-        <div style="font-family:var(--font-display);font-size:42px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-1px;">15+</div>
-        <div style="font-size:11px;color:rgba(255,255,255,0.45);letter-spacing:1.5px;text-transform:uppercase;margin-top:6px;">Clientes activos</div>
+      <div style="flex:1;padding:20px 24px;">
+        <div style="font-family:var(--font-display);font-size:38px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-1px;">15+</div>
+        <div style="font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;">Clientes activos</div>
       </div>
     </div>
   </div>
@@ -1254,7 +1254,7 @@
 
     <div class="servicio-card fade-in fade-in-delay-2" style="padding:0;overflow:hidden;">
       <div style="height:180px;overflow:hidden;position:relative;">
-        <img src="PAGINA_4_3.png" alt="Carga pesada rollos acero TRIVSA" style="width:100%;height:100%;object-fit:cover;object-position:center 60%;">
+        <img src="PAGINA_7.png" alt="Carga pesada rollos acero TRIVSA" style="width:100%;height:100%;object-fit:cover;object-position:center 60%;">
         <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 30%,rgba(10,10,10,0.7) 100%);"></div>
         <div style="position:absolute;top:12px;right:12px;font-family:var(--font-display);font-size:36px;font-weight:900;color:rgba(255,255,255,0.15);">03</div>
       </div>
@@ -1266,7 +1266,7 @@
 
     <div class="servicio-card fade-in" style="padding:0;overflow:hidden;">
       <div style="height:180px;overflow:hidden;position:relative;">
-        <img src="PAGINA_5_1.png" alt="Almacén TRIVSA" style="width:100%;height:100%;object-fit:cover;object-position:center 50%;">
+        <img src="PAGINA_4_1.png" alt="Almacén TRIVSA" style="width:100%;height:100%;object-fit:cover;object-position:center 50%;">
         <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 30%,rgba(10,10,10,0.7) 100%);"></div>
         <div style="position:absolute;top:12px;right:12px;font-family:var(--font-display);font-size:36px;font-weight:900;color:rgba(255,255,255,0.15);">04</div>
       </div>
@@ -1355,11 +1355,11 @@
     <div class="seguridad-visual fade-in">
       <!-- Main: GPS dashboard -->
       <div class="seg-main-img">
-        <img src="PAGINA_8_1.png" alt="Sistema GPS Motum TRIVSA" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;">
+        <img src="PAGINA_8_2.png" alt="Sistema GPS Motum TRIVSA" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;">
       </div>
       <!-- Secondary photo: dashcam -->
       <div style="position:absolute;bottom:-24px;left:-24px;width:200px;height:140px;overflow:hidden;clip-path:polygon(0 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%);border:3px solid var(--bg);">
-        <img src="PAGINA_8_3.png" alt="Dashcam TRIVSA" style="width:100%;height:100%;object-fit:cover;">
+        <img src="PAGINA_9_1.png" alt="Dashcam TRIVSA" style="width:100%;height:100%;object-fit:cover;">
       </div>
       <div class="seg-stat-box">
         <div class="seg-stat-num">100%</div>
