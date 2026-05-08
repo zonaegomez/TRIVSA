@@ -1148,47 +1148,59 @@
       </div>
     </div>
 
-    <!-- TODO A LA IZQUIERDA: texto + stats -->
-    <div style="flex:1;display:flex;align-items:center;justify-content:flex-end;padding:32px 5vw;gap:40px;">
+    <!-- TODO JUNTO A LA DERECHA: título + stats + botones en un solo bloque -->
+    <div style="flex:1;display:flex;align-items:center;justify-content:flex-end;padding:32px 5vw;">
 
-      <!-- TÍTULO IZQUIERDA -->
-      <div style="max-width:460px;flex-shrink:0;">
-        <h1 style="font-family:var(--font-display);font-weight:900;font-size:clamp(54px,6.5vw,96px);line-height:0.87;letter-spacing:-1px;text-transform:uppercase;margin-bottom:24px;color:#fff;text-shadow:0 2px 24px rgba(0,0,0,0.4);">
+      <!-- BLOQUE DERECHA: título arriba, stats+botones abajo -->
+      <div style="max-width:680px;width:100%;display:flex;flex-direction:column;gap:24px;">
+
+        <!-- TÍTULO -->
+        <h1 style="font-family:var(--font-display);font-weight:900;font-size:clamp(52px,6vw,92px);line-height:0.87;letter-spacing:-1px;text-transform:uppercase;color:#fff;text-shadow:0 2px 24px rgba(0,0,0,0.4);">
           <span style="color:#F5C518;">Conectamos</span><br>
           destinos,<br>
           <span style="color:#E8453C;">entregamos</span><br>
           confianza.
         </h1>
-        <div style="width:56px;height:4px;background:linear-gradient(90deg,#F5C518,#C0392B);margin-bottom:20px;"></div>
-        <p style="font-size:17px;font-weight:300;color:rgba(255,255,255,0.78);line-height:1.75;margin-bottom:36px;max-width:400px;">
-          Línea transportista federal especializada en <strong style="color:#fff;font-weight:500;">carga general y especializada</strong>. Plataformas de 40ft, carga pesada y proyectos industriales en toda la república.
-        </p>
-        <div style="display:flex;gap:14px;flex-wrap:wrap;">
-          <a href="#contacto" class="btn-primary">Solicitar cotización</a>
-          <a href="#servicios" style="font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.85);text-decoration:none;border:1px solid rgba(255,255,255,0.35);padding:13px 26px;display:inline-block;" onmouseover="this.style.borderColor='#F5C518';this.style.color='#F5C518'" onmouseout="this.style.borderColor='rgba(255,255,255,0.35)';this.style.color='rgba(255,255,255,0.85)'">Ver servicios</a>
+
+        <!-- DESCRIPCIÓN -->
+        <div>
+          <div style="width:56px;height:4px;background:linear-gradient(90deg,#F5C518,#C0392B);margin-bottom:16px;"></div>
+          <p style="font-size:16px;font-weight:300;color:rgba(255,255,255,0.78);line-height:1.7;max-width:420px;">
+            Línea transportista federal especializada en <strong style="color:#fff;font-weight:500;">carga general y especializada</strong>. Plataformas de 40ft, carga pesada y proyectos industriales en toda la república.
+          </p>
+        </div>
+
+        <!-- STATS + BOTONES en la misma fila -->
+        <div style="display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap;">
+
+          <!-- STATS VERTICAL -->
+          <div style="display:flex;flex-direction:column;gap:2px;min-width:190px;">
+            <div style="background:rgba(0,0,0,0.6);backdrop-filter:blur(12px);border:1px solid rgba(245,197,24,0.15);border-left:3px solid #F5C518;padding:14px 22px;">
+              <div style="font-family:var(--font-display);font-size:48px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-2px;">+25</div>
+              <div style="font-size:10px;color:rgba(255,255,255,0.45);letter-spacing:2px;text-transform:uppercase;margin-top:2px;">Años de experiencia</div>
+            </div>
+            <div style="background:rgba(0,0,0,0.6);backdrop-filter:blur(12px);border:1px solid rgba(245,197,24,0.15);border-left:3px solid #F5C518;padding:14px 22px;">
+              <div style="font-family:var(--font-display);font-size:48px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-2px;">0</div>
+              <div style="font-size:10px;color:rgba(255,255,255,0.45);letter-spacing:2px;text-transform:uppercase;margin-top:2px;">Accidentes carreteros</div>
+            </div>
+            <div style="background:rgba(0,0,0,0.6);backdrop-filter:blur(12px);border:1px solid rgba(245,197,24,0.15);border-left:3px solid #F5C518;padding:14px 22px;">
+              <div style="font-family:var(--font-display);font-size:48px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-2px;">3</div>
+              <div style="font-size:10px;color:rgba(255,255,255,0.45);letter-spacing:2px;text-transform:uppercase;margin-top:2px;">Puertos habilitados</div>
+            </div>
+            <div style="background:rgba(0,0,0,0.6);backdrop-filter:blur(12px);border:1px solid rgba(245,197,24,0.15);border-left:3px solid #F5C518;padding:14px 22px;">
+              <div style="font-family:var(--font-display);font-size:48px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-2px;">15+</div>
+              <div style="font-size:10px;color:rgba(255,255,255,0.45);letter-spacing:2px;text-transform:uppercase;margin-top:2px;">Clientes activos</div>
+            </div>
+          </div>
+
+          <!-- BOTONES debajo de los stats -->
+          <div style="display:flex;flex-direction:column;gap:12px;justify-content:flex-end;padding-bottom:4px;">
+            <a href="#contacto" class="btn-primary">Solicitar cotización</a>
+            <a href="#servicios" style="font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.85);text-decoration:none;border:1px solid rgba(255,255,255,0.35);padding:13px 26px;display:inline-block;text-align:center;" onmouseover="this.style.borderColor='#F5C518';this.style.color='#F5C518'" onmouseout="this.style.borderColor='rgba(255,255,255,0.35)';this.style.color='rgba(255,255,255,0.85)'">Ver servicios</a>
+          </div>
+
         </div>
       </div>
-
-      <!-- STATS PANEL DERECHA — vertical -->
-      <div style="display:flex;flex-direction:column;gap:2px;min-width:210px;flex-shrink:0;">
-        <div style="background:rgba(0,0,0,0.55);backdrop-filter:blur(12px);border:1px solid rgba(245,197,24,0.15);border-left:3px solid #F5C518;padding:18px 26px;">
-          <div style="font-family:var(--font-display);font-size:56px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-2px;">+25</div>
-          <div style="font-size:10px;color:rgba(255,255,255,0.45);letter-spacing:2px;text-transform:uppercase;margin-top:4px;">Años de experiencia</div>
-        </div>
-        <div style="background:rgba(0,0,0,0.55);backdrop-filter:blur(12px);border:1px solid rgba(245,197,24,0.15);border-left:3px solid #F5C518;padding:18px 26px;">
-          <div style="font-family:var(--font-display);font-size:56px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-2px;">0</div>
-          <div style="font-size:10px;color:rgba(255,255,255,0.45);letter-spacing:2px;text-transform:uppercase;margin-top:4px;">Accidentes carreteros</div>
-        </div>
-        <div style="background:rgba(0,0,0,0.55);backdrop-filter:blur(12px);border:1px solid rgba(245,197,24,0.15);border-left:3px solid #F5C518;padding:18px 26px;">
-          <div style="font-family:var(--font-display);font-size:56px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-2px;">3</div>
-          <div style="font-size:10px;color:rgba(255,255,255,0.45);letter-spacing:2px;text-transform:uppercase;margin-top:4px;">Puertos habilitados</div>
-        </div>
-        <div style="background:rgba(0,0,0,0.55);backdrop-filter:blur(12px);border:1px solid rgba(245,197,24,0.15);border-left:3px solid #F5C518;padding:18px 26px;">
-          <div style="font-family:var(--font-display);font-size:56px;font-weight:900;color:#F5C518;line-height:1;letter-spacing:-2px;">15+</div>
-          <div style="font-size:10px;color:rgba(255,255,255,0.45);letter-spacing:2px;text-transform:uppercase;margin-top:4px;">Clientes activos</div>
-        </div>
-      </div>
-
     </div>
   </div>
 
